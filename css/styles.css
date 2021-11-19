@@ -310,10 +310,10 @@ body {
 
 .benefit-thumb {
   display: flex;
+  height: 120px;
   justify-content: center;
   align-items: center;
   background-color: var(--primary-bg-color);
-  padding: 25px 100px;
 }
 
 .benefit-list .title {
@@ -358,7 +358,8 @@ body {
 .team-list .item {
   flex-basis: calc(100% / 4-30px);
   margin-left: 30px;
-  box-shadow: 0px 2px 1px 0px #00000033, 0px 1px 1px 0px #00000024, 0px 1px 3px 0px #0000001f;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
 .team-list .name {
@@ -381,6 +382,7 @@ body {
 .team-item-bottom {
   padding-top: 30px;
   padding-bottom: 30px;
+  background-color: #fff;
 }
 
 .socials-list {
@@ -424,11 +426,10 @@ body {
   margin-left: -30px;
 }
 
-.client-list .item {
+.client-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-basis: calc(100% / 6-30px);
   width: 170px;
   height: 92px;
   border: 1px solid #afb1b8;
@@ -440,13 +441,13 @@ body {
   fill: #afb1b8;
 }
 
-.client-list .item:hover,
-.client-list .item:focus {
+.client-link:hover,
+.client-link:focus {
   border-color: var(--accent-color);
 }
 
-.client-list .item:hover .icon-client,
-.client-list .item:focus .icon-client {
+.client-link:hover .icon-client,
+.client-link:focus .icon-client {
   fill: var(--accent-color);
 }
 
@@ -551,6 +552,7 @@ body {
 
 .socials-title {
   margin-bottom: 20px;
+  font-size: 14px;
   font-weight: 700;
   line-height: 1.14;
   letter-spacing: 0.03em;
